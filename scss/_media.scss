@@ -1,0 +1,595 @@
+@media (max-width: 1900px){
+    
+}
+// ====================== start 1441px =====================
+@media (max-width: 1441px){
+    
+}
+// ====================== start 1400px =====================
+@media (max-width: 1400px){
+   
+}
+// ====================== start 1225px =====================
+@media (max-width: 1225px){
+    
+}
+// ====================== start 1200px =====================
+@media (max-width: 1200px){
+    
+}
+// ====================== start 1150px =====================
+@media (max-width: 1150px){
+    .services-box{
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .services-content__text{
+        padding: 0 25px 25px 0px;
+    }
+    .services-social{
+        margin-bottom: 30px;
+    }
+    .services-content__author{
+        margin-top: 30px;
+    }
+    .services-content__name{
+        margin-bottom: 30px;
+    }
+    .services-content{
+        margin: 0 auto;
+        max-width: 840px;
+    }
+    .services-slider{
+        margin: 0 auto;
+    }
+    .services-slider__nav{
+        display: none;
+    }
+    .services-box,
+    .tutorial__wrapper{
+        padding: 40px 0;
+    }
+    .services-slider__for .slick-slide{
+        height: 420px;
+    }
+    .slider__for-images{
+        height: 420px;
+    }   
+
+    .product-page__content{
+        max-width: 100%;
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    .product-page__content-mix{
+        max-width: 600px;
+        width: 100%;
+    }
+    .product-page__content-box{
+        flex-wrap: wrap;
+    }
+    .product-page__item{
+        max-width: 100%;
+    }
+    .product-page__item.hover{
+        max-width: 100%;
+    }
+    .team__inner{
+        justify-content: space-around;
+    }
+   .team__item{
+        flex-basis: calc(50% - 20px);
+        max-width: 400px;
+    }
+}
+// ====================== start 1050px =====================
+@media (max-width: 1050px){
+   
+}
+
+// ====================== start 900px =====================
+@media (max-width: 900px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header{
+        position: fixed;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 199;
+        }
+        svg{
+            width: 90px;
+        }
+    }
+    .header__inner{
+        height: 50px;
+    }
+    .header__logo{
+        max-width: 100px;
+    }
+    .header__burger{
+       display: block;
+       position: relative;
+       width: 30px;
+       height: 20px;
+       z-index: 200;
+       span{
+           position: absolute;
+           background-color: #000;
+           width: 100%;
+           height: 2px;
+           left: 0;
+           top: 9px;
+           transition: all 0.3s ease 0s;
+       }
+       &::before,
+       &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: #000;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+       }
+       &::before{
+            top: 0;
+       }
+       &::after{
+           bottom: 0;
+       }
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active{
+        span{
+           transform: scale(0);
+        }
+    }
+    .header__menu{
+       overflow: auto;
+       position: fixed;
+       top: -100%;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       padding: 70px 0 0 0;
+       transition: all 0.3s ease 0s;
+    }
+    .header__menu.active{
+        top: 0;
+    }
+   .menu__list{
+       display: block;
+       text-align: center;
+       &-item{
+           margin: 0 0 20px 0;
+       }
+    }
+    .slider .slick-prev.slick-arrow,
+    .slider .slick-next.slick-arrow{
+        display: none !important;
+    }
+    .intro,
+    .slider{
+        margin-top: 50px;
+    }
+    .slider{
+        &__inner-items{
+            height: 750px;
+        }
+        &__title{
+            font-size: 40px;
+            line-height: 37px;
+        }
+        &__subtitle{
+            font-size: 15px;
+        }
+    }
+    .intro{
+        &__title{
+            font-size: 32px;
+            line-height: 37px;
+        }
+        &__subtitle{
+            font-size: 15px;
+        }
+    } 
+    .contacts__box{
+        padding: 50px 0;
+    }
+    .contacts__info-title{
+        font-size: 28px;
+    }
+}
+// ====================== start 840px =====================
+@media (max-width: 840px){
+    .contacts__info-adres{
+        margin-bottom: 10px;
+    }
+    .contacts__info-inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contacts__info-box{
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contacts__box{
+            flex-wrap: wrap;
+    }
+    .contacts__info {
+        max-width: 100%;
+    }
+    .advantages__content{
+            text-align: left;
+    }
+    .advantages__title{
+        position: relative;
+        padding-bottom: 16px;
+        margin-bottom: 25px;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 60px;
+            background-color: #000;
+        }
+    }
+    .advantages__text{
+        padding: 0;
+    }
+    .advantages__inner{
+        flex-wrap: wrap;
+    }
+    .advantages__item{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .advantages__item-title{
+        margin-bottom: 10px;
+    }
+
+    .about__inner{
+       flex-wrap: wrap;
+    }
+}
+// ====================== start 790px =====================
+@media (max-width: 790px){
+    .product-page__inner{
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+     .product-page__content{
+        margin-right: auto;
+    }
+    .product-page__aside{
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .product-page__item{
+        margin-bottom: 40px;
+        &-inner__box{
+                padding: 35px 20px 35px 20px;
+        }
+        &-title{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        &-name{
+            margin-bottom: 20px;
+        }
+        &-text{
+            padding-bottom: 20px;
+            font-size: 13px;
+        }
+    }
+    .content__posts-item{
+        justify-content: start;
+    }
+    .content__posts-item__box{
+        max-width: 100%;
+        min-height: 80px;
+        padding: 0 20px;
+    }
+}
+
+// ====================== start 700px =====================
+@media (max-width: 700px){ 
+   .team__item{
+        flex-basis: calc(100% - 20px);
+        max-width: 400px;
+    }
+}
+
+// ====================== start 680px =====================
+@media (max-width: 680px){
+   
+}
+
+// ====================== start 660px =====================
+@media (max-width: 660px){
+    .slider{
+        &__title{
+            font-size: 28px;
+            line-height: 37px;
+            padding: 10px 20px;
+        }
+    }
+    .product-page{
+        padding: 50px 0;
+        }
+    .team{
+        padding-bottom: 50px;
+    }
+    .intro{
+        &__title{
+            font-size: 32px;
+            line-height: 37px;
+        }
+        &__subtitle{
+            font-size: 15px;
+        }
+        &__text{
+            font-size: 11px;
+        }
+    } 
+}
+// ====================== start 570px =====================
+@media (max-width: 570px){
+    .services-nav__sort{
+        font-size: 0;
+        width: 65px;
+    }
+}
+
+// ====================== start 540px =====================
+@media (max-width: 540px){
+    .slider{
+        &__subtitle{
+            font-size: 13px;
+        }
+    }
+    .content__posts-item__box{
+        padding: 0 10px;
+    }
+    .content__posts-item__title{
+        font-size: 13px;
+    }
+    .content__posts-item__date{
+        font-size: 12px;
+    }
+    .services{
+        &-content__title{
+            font-size: 25px;
+        }
+    }
+    .tutorial{
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper{
+            padding: 0px 0px 40px 0px;
+        }
+        &__images{
+            flex-wrap: wrap;
+            &-item{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    } 
+    .contacts__form{
+        padding-left: 0;
+    }
+   .contacts__form-row{
+       flex-wrap: wrap;
+       input{
+           margin-bottom: 10px;
+           max-width: 100%;
+           & + input{
+               margin-left: 0;
+               margin-bottom: 0px;
+           }
+       }
+    } 
+    .intro{
+        &__title{
+            font-size: 32px;
+            line-height: 35px;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+    } 
+
+    .contacts__info-title{
+        font-size: 24px;
+    }
+    .contacts__info-text{
+        font-size: 14px;
+    }
+    .advantages{
+        padding: 40px 0;
+    }
+    .advantages__title{
+        font-size: 25px;
+    }
+    .advantages__text{
+        font-size: 13px;
+    }
+}
+// ====================== start 520px =====================
+@media (max-width: 520px){
+    .services-social{
+        font-size: 0px;
+        &::before{
+            left: 15px;
+        }
+    }
+    .services-social:hover .services-social__list {
+        transform: translate3d(10%, -77%, 0);
+    }
+}
+// ====================== start 490px =====================
+@media (max-width: 490px){
+    .container-fluid {
+        padding: 0 0px;
+    }
+    .slider{
+            &__title{
+                font-size: 28px;
+                line-height: 30px;
+            }
+            &__subtitle{
+                font-size: 12px;
+            }
+        }
+    .intro{
+        &__title{
+            font-size: 28px;
+            line-height: 30px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    } 
+    .contacts__info-title,
+    .advantages__title{
+        font-size: 21px;
+    }
+    .contacts__info-text,
+    .advantages__text{
+        font-size: 14px;
+    }
+}
+// ====================== start 450px =====================
+@media (max-width: 450px){
+    .products__inner-btn{
+        display: block;
+        padding: 10px 35px 10px 25px;
+        &::before{
+            display: none;
+        }
+    }
+    .products__inner-btn.mixitup-control-active{
+        
+        &::before{
+            display: block;
+            content: "\f0c4";
+            position: absolute;
+            font-size: 16px;
+            font-family: 'icomoon';
+
+            right: 5px;
+            top: 18px;
+            transform: translate3d(0, -50%, 0) rotate(-130deg);
+            background-color: inherit;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .services-nav{
+        &__wrapper{
+            height: 43px;
+        }
+        &__arrow{
+            button{
+                padding: 15px 0;
+                width: 120px;
+            }
+            .slick-prev,
+            .slick-next{
+                &::before{
+                    top: 15px;
+                }
+            }
+            .slick-prev{
+                &::before{
+                    left: 7px;
+                }
+            }
+            .slick-next{
+                right: 2px;
+                &::before{
+                    right: 23px;
+                }
+            }   
+        }
+        &__sort{
+            width: 55px;
+            padding: 0;
+            &::before{
+                top: 10px;
+                left: 20px;
+            }
+        }
+    }
+    .services-social{
+        padding: 7px 13px 7px 30px;
+    }
+    .services-social__list{
+        height: 38px;
+    }
+    .services-social__link {
+        width: 32px;
+    }
+    .services-social:hover .services-social__list {
+        transform: translate3d(10%, -82%, 0);
+    }
+    .footer_copyright{
+        font-size: 10px;
+    }
+}
+// ====================== start 390px =====================
+@media (max-width: 390px){
+    .intro__title{
+        font-size: 22px;
+    }
+    .services-content__popular-wish{
+        margin-left: 30px;
+    }
+}
+// ====================== start 330px =====================
+@media (max-width: 330px){
+    .services-nav__sort{
+        width: 40px;
+        &::before {
+            top: 10px;
+            left: 13px;
+        }
+    }
+    .footer__social-link svg {
+        width: 13px;
+        height: 13px;
+    }
+}
+// ====================== end 841px =====================
+@media (min-width: 841px){
+//    .menu__list{
+//        display: block !important;
+//    }
+}

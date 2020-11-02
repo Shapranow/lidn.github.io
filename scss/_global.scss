@@ -1,0 +1,150 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html,
+body {
+    height: 100%;
+    position: relative;
+    // overflow-x: hidden;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+    min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.page-content{
+    background-color: $grey;
+}
+.footer {
+	flex: 0 0 auto;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: $text;
+}
+ul,
+li,
+p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text;
+
+    
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.post__container{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@media (min-width: 1150px) {
+    .container-fluid{
+        padding: 0 0;
+    }
+}
+.title{
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px;
+    color: $bg;
+    @include f700;
+    margin-bottom: 30px;
+}
+.rate-star{
+    display: inline-block;
+    margin-right: 13px;
+}
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0px 40px;
+        overflow: hidden;
+        width: 1200px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            
+            & + li{
+                padding-left: 24px;
+                &::before{
+                    content: '-';
+                    position: absolute;
+                    left: 8px;
+                    color: $green;
+                }
+            }
+            &:last-child{
+                a,
+                span{
+                    color: $bg;
+                }
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+    }
+}
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
+.ibg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{
+        display: none;
+    }
+}
+#modal{
+    display: none;
+}
+
+
+
+
